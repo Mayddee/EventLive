@@ -1,0 +1,50 @@
+.form-signin {
+    max-width: 400px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: #f8f9fa; /* Background color for the form */
+    border: 1px solid #dee2e6; /* Border color for the form */
+    border-radius: 5px; /* Rounded corners for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect for the form */
+  }
+  
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da; /* Border color for the input fields */
+    border-radius: 5px; /* Rounded corners for the input fields */
+  }
+  
+  .form-signin input[type="email"],
+  .form-signin input[type="password"] {
+    margin-bottom: 20px; /* Increased margin between input fields */
+  }
+  
+  .form-signin button[type="submit"] {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .form-signin button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade of the primary color on hover */
+  }
+  
+  .form-signin h1 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #007bff; /* Primary color for the heading */
+    text-align: center;
+    text-transform: uppercase; /* Uppercase text for the heading */
+  }
+  
+  
+  

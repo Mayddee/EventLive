@@ -1,0 +1,16 @@
+<div class="event-details" *ngIf="event">
+    <h2>{{ event.name }}</h2>
+    <p><strong>Category:</strong> {{ event.category }}</p>
+    <p><strong>Description:</strong> {{ event.description }}</p>
+    <p><strong>Location:</strong> {{ event.location }}</p>
+    <p><strong>Ticket Cost:</strong> {{ event.ticket_cost}} tg</p>
+    <p><strong>Date:</strong> {{ event.date | date }}</p>
+    <p><strong>Available Seats:</strong> {{ event.available_seats }}</p>
+    <div>
+        <button  (click)="bookEvent(event.id)">Book Event</button>
+    </div>
+
+  </div>
+  <div *ngIf="!event">
+    <p>Loading event details...</p>
+  </div>

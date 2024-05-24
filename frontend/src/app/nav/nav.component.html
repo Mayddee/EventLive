@@ -1,0 +1,59 @@
+<!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+  <a class="navbar-brand" routerLink="/">Home</a>
+  <a class="navbar-brand" routerLink="/events">Events</a>
+  <div class="navbar-nav me-auto mb-2 mb-md-8 nav-bar-auth">
+    <a class="nav-link" [routerLink]="['/events', categories[0]]">Concert</a>
+    <a class="nav-link" [routerLink]="['/events', categories[1]]">Movie Premiere</a>
+    <a class="nav-link" [routerLink]="['/events', categories[2]]">Theatre</a>
+    <a class="nav-link" [routerLink]="['/events', categories[3]]">Tour</a>
+    <a class="nav-link" [routerLink]="['/events', categories[4]]">Show</a>
+  </div>
+  <div >
+    <ul class="navbar-nav me-auto mb-2 mb-md-8 nav-bar-auth" *ngIf="!authenticated">
+      <li class="nav-item">
+        <a routerLink="/login" class="nav-link" >Login</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/register" class="nav-link" >Sign up</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav me-auto mb-2 mb-md-8 nav-bar-auth" *ngIf="authenticated">
+      <li class="nav-item">
+        <a routerLink="/login" class="nav-link" (click)="logout()">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4">
+  <div class="d-flex align-items-center">
+    <a class="navbar-brand" routerLink="/">Home</a>
+    <a class="navbar-brand" routerLink="/events">Events</a>
+  </div>
+  <div class="navbar-nav me-auto mb-2 mb-md-8 nav-bar-auth">
+    <a class="nav-link" [routerLink]="['/category-events/CON']">Concert</a>
+    <a class="nav-link" [routerLink]="['/category-events', categories[1]]">Movie Premiere</a>
+    <a class="nav-link" [routerLink]="['/category-events', categories[2]]">Theatre</a>
+    <a class="nav-link" [routerLink]="['/category-events', categories[3]]">Tour</a>
+    <a class="nav-link" [routerLink]="['/category-events', categories[4]]">Show</a>
+  </div>
+  <div >
+    <ul class="navbar-nav me-auto mb-2 mb-md-8 nav-bar-auth" *ngIf="!authenticated">
+      <li class="nav-item">
+        <a routerLink="/login" class="nav-link" >Login</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/register" class="nav-link" >Sign up</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav me-auto mb-2 mb-md-8 nav-bar-auth" *ngIf="authenticated">
+      <li class="nav-item">
+        <a routerLink="/login" class="nav-link" (click)="logout()">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
